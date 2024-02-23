@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+@layer components {
+  .warpper {
+    @apply max-w-[1536px] mx-auto bg-fuchsia-800 px-20 max-xl:max-w-[1366px] max-lg:max-w-[1024px];
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .warpper {
+    max-width: 1366px;
+  }
+}
+@media screen and (max-width: 1280) {
+  .warpper {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .warpper {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .warpper {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .warpper {
+    max-width: 475px;
+  }
+}
