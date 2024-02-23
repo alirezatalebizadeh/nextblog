@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} max-w-[100vw] overflow-x-hidden `}>
+      <body className={`${inter.className} max-w-[100vw] overflow-x-hidden dark:bg-gray-800 bg-white`}>
         <div className="min-h-[100vh] bg-bg text-textColor ">
           <div className="warpper">
             <Navbar />

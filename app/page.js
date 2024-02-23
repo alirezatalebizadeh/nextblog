@@ -5,13 +5,13 @@ import Menu from "@/components/menu/Menu";
 
 export default function Home() {
   return (
-    <main className="">
-      <Featured />
-      <CategoryList />
-      <div className="">
-        <CardList />
-        <Menu />
-      </div>
-    </main>
+      <main className="">
+        <Featured />
+        <CategoryList />
+        <div className="">
+          <CardList />
+          <Menu />
+        </div>
+      </main>
   );
 }
