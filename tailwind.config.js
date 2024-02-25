@@ -18,6 +18,7 @@ module.exports = {
         textColor: "000",
         softBg: "#f0f0f0",
         softTextColor: "#626262",
+        dark: "#000",
       },
     },
   },

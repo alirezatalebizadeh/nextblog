@@ -13,14 +13,14 @@ export default function AuthLinks() {
           </li>
         </>
       ) : (
-        <div className="flex gap-[20px] items-center">
+        <>
           <li>
             <Link href="/write">Write</Link>
           </li>
           <li>
             <Link href="/logout">Logout</Link>
           </li>
-        </div>
+        </>
       )}
     </>
   );

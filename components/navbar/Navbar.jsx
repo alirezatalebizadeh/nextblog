@@ -21,23 +21,27 @@ export default function Navbar() {
           <Image alt="youtube" src="/youtube.png" width={24} height={24} />
         </Link>
       </div>
-      <h1 className="w-1/2 text-center text-[36px] font-bold">BlogSite</h1>
+      <h1 className="w-1/2 text-center text-[36px] font-bold text-softTextColor no-underline">
+        BlogSite
+      </h1>
       <ul className="flex flex-1 items-center gap-5">
-        <li className="">
-          <TeamToggle />
+        <TeamToggle />
+        <li>
+          <Link href="/" className="">
+            HomePage
+          </Link>
         </li>
         <li>
-          <Link href="/">HomePage</Link>
+          <Link href="/contact" className="">
+            Contact
+          </Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/about" className="">
+            About
+          </Link>
         </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li className="">
-          <AuthLinks />
-        </li>
+        <AuthLinks />
       </ul>
     </div>
   );

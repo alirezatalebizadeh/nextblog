@@ -3,6 +3,8 @@ import Navbar from "@/components/navbar/Navbar";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./reset.css";
+import { ThemeContext, ThemeContextProvider } from "@/context/teameToggle";
+import Providers from "@/providers/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,15 +15,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} max-w-[100vw] overflow-x-hidden dark:bg-gray-800 bg-white`}>
-        <div className="min-h-[100vh] bg-bg text-textColor ">
-          <div className="warpper">
-            <Navbar />
-            {children}
-            <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${inter.className} max-w-[100vw] overflow-x-hidden bg-white dark:bg-slate-800 dark:text-textColor `}
+      >
+        <Providers>
+          <div className="min-h-[100vh] bg-bg text-textColor ">
+            <div className="warpper">
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
           </div>
-        </div>
+        </Providers>
       </body>
     </html>
   );

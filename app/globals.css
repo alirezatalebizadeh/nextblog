@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 a {
-  color: inherit;
-  text-decoration: none;
+  @apply text-softTextColor dark:text-textColor dark:text-white no-underline ;
 }
+
 @layer components {
   .warpper {
-    @apply max-w-[1536px] mx-auto bg-fuchsia-800 px-20 max-xl:max-w-[1366px] max-lg:max-w-[1024px];
+    @apply max-w-[1536px] mx-auto bg-softBg dark:bg-slate-800 px-20 max-xl:max-w-[1366px] max-lg:max-w-[1024px];
   }
 }
 
