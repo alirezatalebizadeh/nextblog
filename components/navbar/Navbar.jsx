@@ -7,36 +7,38 @@ import TeamToggle from "../teamToggle/TeamToggle";
 export default function Navbar() {
   return (
     <div className="flex items-center justify-between h-[100px]">
-      <div className="flex flex-1 gap-[10px] items-center ">
-        <Link href="#">
+      <div className="hidden  md:flex  gap-[10px] items-center ">
+        <Link href="/">
           <Image alt="facebook" src="/facebook.png" width={24} height={24} />
         </Link>
-        <Link href="#">
+        <Link href="/">
           <Image alt="instagram" src="/instagram.png" width={24} height={24} />
         </Link>
-        <Link href="#">
+        <Link href="/">
           <Image alt="tiktok" src="/tiktok.png" width={24} height={24} />
         </Link>
-        <Link href="#">
+        <Link href="/">
           <Image alt="youtube" src="/youtube.png" width={24} height={24} />
         </Link>
       </div>
-      <h1 className="w-1/2 text-center text-[36px] font-bold text-softTextColor no-underline">
-        BlogSite
+      <h1 className="w-max text-center text-2xl lg:text-[36px] font-bold mr-[25px] md:mr-24">
+        <Link href="/" className="block">
+          BlogSite
+        </Link>
       </h1>
-      <ul className="flex flex-1 items-center gap-5">
+      <ul className="flex  items-center  gap-[15px] md:gap-5">
         <TeamToggle />
-        <li>
+        <li className="hidden md:inline-block">
           <Link href="/" className="">
             HomePage
           </Link>
         </li>
-        <li>
+        <li className="hidden md:inline-block">
           <Link href="/contact" className="">
             Contact
           </Link>
         </li>
-        <li>
+        <li className="hidden md:inline-block">
           <Link href="/about" className="">
             About
           </Link>

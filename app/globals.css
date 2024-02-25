@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 a {
-  @apply text-softTextColor dark:text-textColor dark:text-white no-underline ;
+  @apply text-inherit dark:text-textColor dark:text-white no-underline text-base md:text-xl;
 }
 
 @layer components {
   .warpper {
-    @apply max-w-[1536px] mx-auto bg-softBg dark:bg-slate-800 px-20 max-xl:max-w-[1366px] max-lg:max-w-[1024px];
+    @apply max-w-[1536px] mx-auto bg-softBg dark:bg-slate-800 px-4 lg:px-20 max-xl:max-w-[1366px] max-lg:max-w-[1024px];
   }
 }
 
@@ -17,7 +17,7 @@ a {
     max-width: 1366px;
   }
 }
-@media screen and (max-width: 1280) {
+/* @media screen and (max-width: 1280) {
   .warpper {
     max-width: 1024px;
   }
@@ -38,4 +38,4 @@ a {
   .warpper {
     max-width: 475px;
   }
-}
+} */

@@ -3,7 +3,6 @@ import Navbar from "@/components/navbar/Navbar";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./reset.css";
-import { ThemeContext, ThemeContextProvider } from "@/context/teameToggle";
 import Providers from "@/providers/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +19,7 @@ export default function RootLayout({ children }) {
         className={`${inter.className} max-w-[100vw] overflow-x-hidden bg-white dark:bg-slate-800 dark:text-textColor `}
       >
         <Providers>
-          <div className="min-h-[100vh] bg-bg text-textColor ">
+          <div className="min-h-[100vh] bg-bg text-textColor">
             <div className="warpper">
               <Navbar />
               {children}
