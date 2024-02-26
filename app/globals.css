@@ -10,6 +10,9 @@ a {
   .warpper {
     @apply max-w-[1536px] mx-auto bg-softBg dark:bg-slate-800 px-4 lg:px-20 max-xl:max-w-[1366px] max-lg:max-w-[1024px];
   }
+  .title {
+    @apply my-[10px] md:my-[30px] font-bold text-lg;
+  }
 }
 
 @media screen and (max-width: 1536px) {

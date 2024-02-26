@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export default function CategoryList() {
   return (
-    <div className="">
-      <h1 className="my-[50px] mx-0 ">Popular Category </h1>
-      <div className="flex items-center justify-between flex-wrap gap-5">
+    <div className="my-6">
+      <h3 className="title">Popular Category </h3>
+      <div className="flex  items-center justify-between  flex-wrap gap-5">
         <Link
           href="/blog?cat=style"
-          className="flex items-center justify-center gap-[10px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] p-4  "
+          className="flex text-base md:text-lg items-center justify-center gap-[20px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] sm:w-[180px] p-4  "
         >
           <Image
             src="/style.png"
@@ -22,7 +22,7 @@ export default function CategoryList() {
         </Link>
         <Link
           href="/blog?cat=style"
-          className="flex items-center justify-center gap-[10px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] p-4  "
+          className="flex text-base md:text-lg items-center justify-center gap-[20px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] sm:w-[180px] p-4  "
         >
           <Image
             src="/fashion.png"
@@ -35,7 +35,7 @@ export default function CategoryList() {
         </Link>
         <Link
           href="/blog?cat=style"
-          className="flex items-center justify-center gap-[10px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] p-4  "
+          className="flex text-base md:text-lg items-center justify-center gap-[20px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] sm:w-[180px] p-4  "
         >
           <Image
             src="/food.png"
@@ -48,7 +48,7 @@ export default function CategoryList() {
         </Link>
         <Link
           href="/blog?cat=style"
-          className="flex items-center justify-center gap-[10px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] p-4  "
+          className="flex text-base md:text-lg items-center justify-center gap-[20px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] sm:w-[180px] p-4  "
         >
           <Image
             src="/travel.png"
@@ -61,7 +61,7 @@ export default function CategoryList() {
         </Link>
         <Link
           href="/blog?cat=style"
-          className="flex items-center justify-center gap-[10px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] p-4  "
+          className="flex text-base md:text-lg items-center justify-center gap-[20px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] sm:w-[180px] p-4  "
         >
           <Image
             src="/culture.png"
@@ -74,7 +74,7 @@ export default function CategoryList() {
         </Link>
         <Link
           href="/blog?cat=style"
-          className="flex items-center justify-center gap-[10px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] p-4  "
+          className="flex text-base md:text-lg items-center justify-center gap-[20px] rounded-[10px] capitalize bg-[#57c4ff31] w-[150px] sm:w-[180px] p-4  "
         >
           <Image
             src="/coding.png"

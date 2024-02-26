@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <Featured />
       <CategoryList />
-      <div>
+      <div className="grid grid-cols-7 gap-5">
         <CardList />
         <Menu />
       </div>

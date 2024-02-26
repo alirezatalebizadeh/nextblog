@@ -35,7 +35,7 @@ export default function AuthLinks() {
       {/* !Navbar For Mobile */}
       {open ? (
         <ul
-          className={`md:hidden fixed top-0 right-0 bottom-0 pt-[27px] w-[225px] 
+          className={`md:hidden fixed top-0 right-0 bottom-0 z-20 pt-[27px] w-[225px] 
           text-right gap-4 flex flex-col bg-white dark:bg-slate-700 pr-4`}
         >
           <li className="flex justify-end ">
