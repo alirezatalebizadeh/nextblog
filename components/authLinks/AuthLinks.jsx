@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 
 export default function AuthLinks() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const status = "notauthenticated";
 
   return (
