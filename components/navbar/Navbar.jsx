@@ -6,7 +6,7 @@ import TeamToggle from "../teamToggle/TeamToggle";
 
 export default function Navbar() {
   return (
-    <div className="flex items-center justify-between h-[100px]">
+    <div className="flex items-center justify-between h-[70px] md:h-[100px]">
       <div className="hidden  md:flex  gap-[10px] items-center ">
         <Link href="/">
           <Image alt="facebook" src="/facebook.png" width={24} height={24} />
@@ -29,19 +29,13 @@ export default function Navbar() {
       <ul className="flex  items-center  gap-[15px] md:gap-5">
         <TeamToggle />
         <li className="hidden md:inline-block">
-          <Link href="/" className="">
-            HomePage
-          </Link>
+          <Link href="/">HomePage</Link>
         </li>
         <li className="hidden md:inline-block">
-          <Link href="/contact" className="">
-            Contact
-          </Link>
+          <Link href="/contact">Contact</Link>
         </li>
         <li className="hidden md:inline-block">
-          <Link href="/about" className="">
-            About
-          </Link>
+          <Link href="/about">About</Link>
         </li>
         <AuthLinks />
       </ul>

@@ -1,8 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import TeamToggle from "../teamToggle/TeamToggle";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
+
 export default function AuthLinks() {
   const [open, setOpen] = useState(true);
   const status = "notauthenticated";
@@ -11,52 +13,58 @@ export default function AuthLinks() {
     <>
       {status === "notauthenticated" ? (
         <div className="flex items-center gap-[15px] ">
-          <Link href="/login" className="">
-            Login
-          </Link>
+          <Link href="/login">Login</Link>
           <RxHamburgerMenu
-            className="md:hidden"
+            size={16}
+            className="md:hidden text-softTextColor dark:text-white"
             onClick={() => setOpen((prevState) => !prevState)}
           />
         </div>
       ) : (
         <div className="flex items-center gap-[15px] ">
-          <Link href="/write" className="">
-            Write
-          </Link>
-          <Link href="/logout" className="">
-            Logout
-          </Link>
+          <Link href="/write">Write</Link>
+          <Link href="/logout">Logout</Link>
           <RxHamburgerMenu
-            className="md:hidden"
+            size={16}
+            className="md:hidden text-softTextColor dark:text-white"
             onClick={() => setOpen((prevState) => !prevState)}
           />
         </div>
       )}
+
+      {/* !Navbar For Mobile */}
       {open ? (
         <ul
-          className={`md:hidden fixed top-0 right-0 bottom-0 pt-8 w-[225px] text-right gap-[10px] flex flex-col bg-softBg`}
+          className={`md:hidden fixed top-0 right-0 bottom-0 pt-[27px] w-[225px] 
+          text-right gap-4 flex flex-col bg-white dark:bg-slate-700 pr-4`}
         >
-          <li className="flex justify-end pr-3 mb-5">
-            <RxHamburgerMenu
-              className="md:hidden"
+          <li className="flex justify-end ">
+            <IoClose
+              size={16}
+              className="md:hidden text-softTextColor dark:text-white"
               onClick={() => setOpen((prevState) => !prevState)}
             />
           </li>
-          <li className="">
-            <Link href="/" className="">
+          <li>
+            <Link href="/" className="text-softTextColor dark:text-white">
               HomePage
             </Link>
           </li>
-          <li className="">
-            <Link href="/contact" className="">
+          <li>
+            <Link
+              href="/contact"
+              className="text-softTextColor dark:text-white"
+            >
               Contact
             </Link>
           </li>
-          <li className="">
-            <Link href="/about" className="">
+          <li>
+            <Link href="/about" className="text-softTextColor dark:text-white">
               About
             </Link>
+          </li>
+          <li className="flex w-full justify-end">
+            <TeamToggle />
           </li>
         </ul>
       ) : (

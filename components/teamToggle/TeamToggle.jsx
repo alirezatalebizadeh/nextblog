@@ -15,11 +15,11 @@ export default function TeamToggle() {
   if (mounted) {
     if (resolvedTheme === "dark") {
       return (
-        <FiSun  onClick={() => setTheme("light")} />
+        <FiSun className="text-white"  onClick={() => setTheme("light")} />
       );
     }
     if (resolvedTheme === "light") {
-      return <FiMoon onClick={() => setTheme("dark")} />;
+      return <FiMoon className="text-inherit" onClick={() => setTheme("dark")} />;
     }
   }
 }
